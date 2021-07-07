@@ -86,7 +86,7 @@ set_property ip_output_repo c:/Xilinx/Vivado/2021.1/myDev/project1/project1.cach
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib C:/Xilinx/Vivado/2021.1/myDev/clock_divider_v1/clock_divider_v1.v
+read_verilog -library xil_defaultlib C:/Xilinx/Vivado/2021.1/myDev/project1/project1.srcs/sources_1/new/clock_divider_v1.v
 read_vhdl -library xil_defaultlib C:/Xilinx/Vivado/2021.1/myDev/project1/project1.srcs/sources_1/new/top.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
