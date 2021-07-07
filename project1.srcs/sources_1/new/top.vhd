@@ -48,7 +48,7 @@ begin
 		clock_out => clk_out
 	);
 	
-	--
+	--dff
 	process(clk_in)
 	begin
 	   if rising_edge(clk_in) then
