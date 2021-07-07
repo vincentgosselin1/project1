@@ -36,6 +36,8 @@ architecture rtl of top is
 --signals  
 signal  clk_out : std_logic;
 signal clk_out_dff : std_logic;
+signal clk_out_dff1 : std_logic;
+signal clk_out_dff2 : std_logic;
 
 begin
 
@@ -53,12 +55,15 @@ begin
 	begin
 	   if rising_edge(clk_in) then
 	       clk_out_dff <= clk_out;
+	       clk_out_dff1 <= clk_out_dff;
+	       clk_out_dff2 <= clk_out_dff1;
+	       
 	   end if;
 	end process;
 	
 	--output assign
-	led0_b <= '0'; 
-	led0_r <= clk_out_dff;
-	led0_g <= '0';
+	led0_b <= '0';
+	led0_r <= '0';
+	led0_g <= clk_out_dff2;
 
 end rtl;
