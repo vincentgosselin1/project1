@@ -63,7 +63,7 @@ begin
 	
 	--output assign
 	led0_b <= '0';
-	led0_r <= '0';
-	led0_g <= clk_out_dff2;
+	led0_r <= clk_out_dff2;
+	led0_g <= '0';
 
 end rtl;
